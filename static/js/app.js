@@ -3,7 +3,7 @@
 function buildPlots(id) {
 
   // Fetch the JSON data and console log it
-  d3.json("../static/js/samples.json").then((data) => {
+  d3.json("../samples.json").then((data) => {
     console.log(data);
 
     // Grab values from the data json object to build the plots
@@ -70,7 +70,7 @@ function buildPlots(id) {
 function metadata(id) {
 
   //fetch metadata
-  d3.json("../static/js/samples.json").then((data) => {
+  d3.json("../samples.json").then((data) => {
 
     //define metadata and print 
     var metadata = data.metadata;
@@ -105,7 +105,7 @@ function init() {
   var dropdownmenu = d3.select("#selDataset");
 
   //reading the data
-  d3.json("../static/js/samples.json").then((data) => {
+  d3.json("../samples.json").then((data) => {
     console.log(data)
 
     //set ids as options on the dropdown menu
